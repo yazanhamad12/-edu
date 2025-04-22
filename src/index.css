@@ -1,0 +1,384 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root{
+  --dark-blue: #252b43;
+  --sky-blue : #23a6f0;
+  --ligth-sky-blue: #b2e3ff;
+  --ligth-orange:#e77c40;
+  --red:#e74040;
+  --yallow:#f3cd03;
+ --green:#2dc071;
+ --ligth-pink:#ffdcd1;
+ --ligth-gray:#737373;
+ --ligth-green:#b9eaa8;
+
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+.text-primary{
+  color: var(--sky-blue);
+  font-weight: 600;
+  font-size: 14px;
+}
+.text-secondary{
+  color: var(--green);
+  font-weight: 600;
+  font-size: 14px;
+}
+body{
+  font-size: 16px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+p{
+  line-height: 1.4;
+}
+/** navbar*/
+#header{
+  background-color: var(--dark-blue);
+}
+.navbar {
+  position: fixed;       
+  top: 0;                
+  left: 0;
+  right: 0;
+  z-index: 1000;        
+ background-color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  height: 100px;
+}
+
+.navbar a{
+  color: white;
+  font-size: 14px;
+}
+.navbar .logo{
+  font-size: 24px;
+  font-weight: 600;
+}
+.navbar ul{
+  display: flex;
+  
+}
+.navbar ul li a {
+  margin: 0 10px;
+  font-weight: 600;
+  transition:all 3,0s ease;
+}
+.navbar ul li a:hover{
+  color: var(--red);
+}
+
+
+.navbar .account .btn-join {
+  background-color: var(--sky-blue);
+  padding: 10px 20px;
+  margin-left: 25px;
+  border-radius: 5px;
+
+  
+}
+.navbar .account .btn-join svg{
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+/** navbar end  */
+/** main start  */
+/** home start  */
+#Home{
+  background-color: var(--dark-blue);
+  padding:  10rem 0;
+}
+#Home .home-header{
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  max-width: 450px;
+
+}
+#Home .home-header span{
+  color: var(--red);
+  font-weight: 600;
+
+}
+#Home .home-header h1{
+  color: var(--ligth-pink);
+  font-weight: 600;
+  margin: 20px 0;
+  font-size: 40px;
+}
+#Home .home-header p{
+  color: var(--ligth-pink);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+#Home .home-header .btn{
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--red);
+  margin: 0 5px;
+
+}
+#Home .home-header .btn.btn-red{
+  color: #fff;
+  background-color: var(--red);
+
+
+}
+#Home .home-header .btn.btn-transparent{
+  color: var(--red);
+
+}
+#Home .car-container{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  
+}
+#Home .car-container .card{
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+
+}
+#Home .car-container .card .icon{
+  display: inline-block;
+  padding: 12px;
+  border-radius: 10px;
+}
+#Home .car-container .card .icon svg{
+  font-size: 25px;
+}
+#Home .car-container .card h2{
+  font-size: 18px;
+  color: var(--dark-blue);
+  margin-top: 15px;
+
+}
+#Home .car-container .card .line{
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-color: var(--red);
+  margin: 15px 0 ;
+
+}
+#Home .car-container .card p{
+  font-size: 14px;
+
+}
+
+/** home end  */
+/** courses start  */
+#courses{
+  padding: 7rem 0;
+
+}
+.section-header h2{
+  font-size: 35px;
+  margin: 15px 0;
+  color: var(--dark-blue);
+
+}
+.section-header p{
+  color: var(--ligth-gray);
+}
+#courses .courses-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+#courses .courses-container img{
+  width: 100%;
+  height: 200px;
+  
+}
+#courses .courses-container .course{
+  position: relative;
+}
+#courses .courses-container .course .sale{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 8px;
+  background-color: var(--red);
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 5px;
+}
+#courses .courses-container .course .content .course-field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#courses .courses-container .course .content{
+    padding: 15px;
+    font-size: 14px;
+    color: var(--ligth-gray);
+}
+#courses .courses-container .course .content .course-field .department{
+  color: var(--sky-blue);
+  font-weight: 600;
+
+}
+#courses .courses-container .course .content .course-field .rating{
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+
+
+}
+#courses .courses-container .course .content .course-field .rating svg{
+  color: var(--yallow);
+  margin-right: 5px;
+}
+#courses .courses-container .course .content h3{
+    margin: 10px 0 ;
+    color: var(--dark-blue);
+
+}
+#courses .courses-container .course .content .sales{
+  margin: 10px 0;
+  font-weight: 600;
+
+
+}
+#courses .courses-container .course .content .price del{
+  margin-right: 10px;
+  font-weight: 600;
+  
+  }
+#courses .courses-container .course .content .course-info{
+  
+ display: flex;
+ align-items: center;
+ margin: 15px 0;
+  
+}
+#courses .courses-container .course .content .course-info p{
+  margin-right: 10px;
+}
+#courses .courses-container .course .content .course-info p svg{
+  color: var(--sky-blue);
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+#courses .courses-container .course .content .btn-learn{
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid var(--sky-blue);
+  color: var(--sky-blue);
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+#courses .courses-container .course .content .btn-learn:hover{
+ background-color: var(--sky-blue);
+ color: #fff;
+}
+
+/** courses end  */
+/** reviews start  */
+#reviews{
+  padding: 7rem;
+}
+#reviews .ratings{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12rem;
+  margin-top: 5rem;
+
+}
+#reviews .ratings .rating img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-right: 12px;
+
+}
+#reviews .ratings .rating .stars{
+  color: var(--yallow);
+  text-align: center;
+  display: block;
+  font-size: 25px;
+
+}
+#reviews .ratings .rating .description{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--ligth-gray);
+}
+#reviews .ratings .rating .person{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 500;
+}
+/** reviews end  */
+
+/** main end  */
+/** footer start  */
+#footer .footer-row{
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3rem;
+
+
+}
+#footer .footer-row h2{
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+#footer .footer-row p{
+  color: var(--ligth-gray);
+}
+#footer .footer-row .social{
+  margin-top: 20px;
+}
+#footer .footer-row .social a{
+  color: var(--sky-blue);
+  margin-right: 10px;
+  font-size: 20px;
+
+}
+#footer .footer-row ul li{
+  margin: 10px 0;
+  color: var(--ligth-gray);
+  font-weight: 500;
+}
+#footer .footer-row ul li a{
+  color: var(--ligth-gray);
+}
+#footer .copyright{
+  text-align: center;
+  padding: 20px 0;
+  color: var(--ligth-gray);
+  font-weight: 500;
+}
+/** footer end  */
