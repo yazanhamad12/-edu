@@ -2,7 +2,7 @@ import React from 'react'
 import SectionHeader from './SectionHeader'
 import { ratingData } from '../Data'
 
-import Review from './review'
+import Review from './Review'
 
 
 
